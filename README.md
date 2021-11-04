@@ -25,12 +25,13 @@ Credit:
 |Name|Email|
 |----|-----|
 |Brandon Gartner|bjgartner@uwaterloo.ca|,
+|Chris Abey|cabey@uwaterloo.ca|,
 
 (add your names in the order you notice this)
 
 MIT License
 
-Copyright (c) 2021, Brandon Gartner, (add your names in the order you notice this)
+Copyright (c) 2021, Brandon Gartner, Chris Abey(add your names in the order you notice this)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
