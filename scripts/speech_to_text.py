@@ -2,7 +2,7 @@ import speech_recognition as sr
 from os import path
 
 #obtain path to "audio1.wav" in the same folder as this script
-AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "audio1.wav")
+AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "../audio/convince_me_more.wav")
 
 #use the audio file as the source
 r = sr.Recognizer()

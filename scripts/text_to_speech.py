@@ -1,5 +1,5 @@
-import pyttsx3
-engine = pyttsx3.init()
+import pyttsx3 as tts
+engine = tts.init()
 def text_to_speech(text):
     engine.say(text)
     engine.runAndWait() 
