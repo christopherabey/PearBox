@@ -18,6 +18,12 @@ Install Python 3
 
 > `pip3 install pyaudio`
 
+> `pip3 install opencv-contrib-python`
+
+> `pip3 install pillow`
+
+> `pip3 install pytesseract`
+
 (how to use)
 
 Credit:
@@ -26,13 +32,14 @@ Credit:
 |----|-----|
 |Brandon Gartner|bjgartner@uwaterloo.ca|,
 |Chris Abey|cabey@uwaterloo.ca|,
+|Avril Chen|a366chen@uwaterloo.ca|,
 |Vaishnavi Ratnasabapathy|vratnasa@uwaterloo.ca|,
 
 (add your names in the order you notice this)
 
 MIT License
 
-Copyright (c) 2021, Brandon Gartner, Chris Abey, Vaishnavi Ratnasabapathy (add your names in the order you notice this)
+Copyright (c) 2021, Brandon Gartner, Chris Abey, Avril Chen, Vaishnavi Ratnasabapathy (add your names in the order you notice this)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
