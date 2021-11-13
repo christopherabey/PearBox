@@ -55,7 +55,7 @@ if (buttonTts.is_pressed):
     speech_to_text.speechRecognition()
     #speechRecognition()
 elif (buttonStt.is_pressed):
-    text_to_speech.textSpeech()
+    text_to_speech.textSpeech('This is a test for pearbox audio')
     #textSpeech()
 elif (buttonTranslate.is_pressed):
     deepl_interfacing.translate()
