@@ -13,8 +13,4 @@ def speechRecognition():
         # convert speech to text
         text = r.recognize_google(audio_data)
         print(text)
-
-    
-speechRecognition()
-
-
+        
