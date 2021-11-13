@@ -29,18 +29,17 @@
 
 from gpiozero import Button
 import pyttsx3 as tts
-import requests;
-import json;
+import requests
+import json
 from PIL import Image
 import pytesseract
 import argparse
-import cv2
 import os
 import speech_recognition as sr
 from os import path
 
 from speech_to_text import speechRecognition
-from text_to_speech import textSpeech
+from text_to_speech import speak
 from deepl_interfacing import translate
 from ocr import OCR
 
@@ -52,17 +51,17 @@ buttonTranslate = Button(24)
 buttonOCR = Button(20)
 
 if (buttonTts.is_pressed):
-    speech_to_text.speechRecognition()
-    #speechRecognition()
+    #speech_to_text.speechRecognition()
+    speechRecognition()
 elif (buttonStt.is_pressed):
-    text_to_speech.textSpeech('This is a test for pearbox audio')
-    #textSpeech()
+    #text_to_speech.textSpeech('This is a test for pearbox audio')
+    speak('This is a test for pearbox audio')
 elif (buttonTranslate.is_pressed):
-    deepl_interfacing.translate()
-    #translate()
+    #deepl_interfacing.translate()
+    translate('Hello World', "EN", "FR")
 elif (buttonOCR.is_pressed):
-    ocr.OCR()
-    #OCR()
+    #ocr.OCR()
+    OCR()
 
 
 
