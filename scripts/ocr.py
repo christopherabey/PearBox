@@ -36,6 +36,20 @@ def ocr(path):
     cv2.imshow("Image", image)
     cv2.imshow("Output", gray)
     cv2.waitKey(0)
+    return text
 
 
-ocr("images/apple.png")
+def ocr_file(path):
+    text = ocr(path)
+
+    #writes the result of calling ocr with that path, into the file
+    try:
+        with open('text.txt', 'w') as file:
+            file.write(text)
+    #if there is a problem finding the file we're outputting to, tells the user that.
+    except FileNotFoundError:
+        print('There was an error with locating the output file.  Please try again later.')
+
+
+#test this on a computer with all of the prerequisites
+ocr_file("images/apple.png")
