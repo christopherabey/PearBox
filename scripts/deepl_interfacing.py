@@ -1,14 +1,14 @@
 import requests;
 import json;
 
-def translate(text, inputlang, outputlang):
+def translate(text, sourceLang, targetLang):
     url = 'https://api-free.deepl.com/v2/translate'
 
     #source lang: language we are currently writing in
-    source_lang = inputlang;
+    source_lang = sourceLang;
 
     #target lang: language we would like to get the result back in
-    target_lang = outputlang;
+    target_lang = targetLang;
 
     #split sentences: whether or not to split sentences that are sent.
     #i'll be turning this on since speech recognition often has trouble with splitting sentences
@@ -40,6 +40,24 @@ def translate(text, inputlang, outputlang):
         print(translated_text);
     return translated_text;
 
-#translate("yes");
-translate('hello my name is julian.  So, remember, this is the basic pattern of an English sentence', 'EN', 'FR');
-translate('c\'est un phrase qui j\'ai ecrit vitement. ici je va simplement ecrire plus de mots en francais', 'FR', 'EN');
+#sourceLang, targetLang
+def translate_file(sourceLang, targetLang):
+    text = 'empty'
+    newText = 'also empty'
+
+    #takes the text from text.txt, reads it, translates it, and saves it back to the file
+    try:
+        with open('text.txt', 'r') as file:
+            text = file.read()
+            newText = translate(text, sourceLang, targetLang)
+    
+        with open('text.txt', 'w') as file:
+            file.write(newText)
+    #if there is a problem finding the file we're outputting to, tells the user that.
+    except FileNotFoundError:
+        print('There was an error with locating the output file.  Please try again later.')
+
+
+translate_file('EN', 'FR')
+
+# translate_file('FR', 'EN')
