@@ -42,7 +42,7 @@ Credit:
 |----|-----|
 |Brandon Gartner|bjgartner@uwaterloo.ca|,
 |Chris Abey|cabey@uwaterloo.ca|,
-|Kushal Mujral|kmujral@uwaterloo.c|,
+|Kushal Mujral|kmujral@uwaterloo.ca|,
 |Avril Chen|a366chen@uwaterloo.ca|,
 |Vaishnavi Ratnasabapathy|vratnasa@uwaterloo.ca|
 MIT License
