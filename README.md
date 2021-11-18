@@ -1,10 +1,30 @@
 # PearBox
 
-(description)
+Description:
+(Our idea is to make a toolbox that has various devices to aid people that are visually or audibly impaired. Our first device is a camera that recognizes text and says it aloud. We plan to house a Raspberry Pi Camera Module in a wooden pen-shaped tube. It’ll be connected to the box. The second device would be a microphone that converts sound into text on a document. It would be housed in a similar way to the camera. Some additional features would be an internet-connected language converter, sending converted text to a document to be accessed later, and scanning only specific words. )
 
 SE101 final project.
+Inspiration: 
+(We were initially motivated to ease reading for the visually impaired. We wanted to create a tool that allowed them to be able to read when Braille was not available or they are in the process of learning it. While finalizing our idea, we noticed how it could be helpful for everyone! These can include people who wanted to instantly save text on a text document, people who want text to be read to them and when people want to save text from an audio and those with Dyslexia.)
 
-(motivation)
+How we built it:
+(Hardware:
+    The box that holds the tools will include most of the hardware components (battery, speaker, Raspberry Pi, screen) for portability. The speaker, Raspberry Pi and battery will be in the box, while the screen would be place on the outside of the box. A breadboard is placed on the other side of the box to connect the buttons to the Raspberry Pi. 
+
+Software:
+    Listed under "Setup" was the API libraries that we implemented in the project. We created a function what connect all of the files together and that recongizes when a button is pished, so an action will follow, such as Speech-to-Text.)
+
+Challenges we ran into:
+(Downloading all of the required API libraries was a challenge because we had to research which one was appropriate for our intended uses. Also, we had trouble setting up the hardware )
+
+
+Accomplishments that we're proud of:
+
+What we learned:
+
+
+
+
 
 Setup:
 
