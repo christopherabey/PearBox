@@ -15,6 +15,7 @@ Software:
     Listed under "Setup" was the API libraries that we implemented in the project. We created a function what connect all of the files together and that recongizes when a button is pished, so an action will follow, such as Speech-to-Text.)
 
 Challenges we ran into:
+
 (Downloading all of the required API libraries was a challenge because we had to research which one was appropriate for our intended uses. Also, we had trouble setting up the hardware )
 
 
@@ -25,6 +26,8 @@ What we learned:
 
 
 
+
+---
 
 Setup:
 
@@ -50,15 +53,19 @@ Install Python 3
 
 (how to use)
 
+---
+
 Credit:
 
 |Name|Email|
 |----|-----|
 |Brandon Gartner|bjgartner@uwaterloo.ca|,
 |Chris Abey|cabey@uwaterloo.ca|,
-|Kushal Mujral|kmujral@uwaterloo.c|,
+|Kushal Mujral|kmujral@uwaterloo.ca|,
 |Avril Chen|a366chen@uwaterloo.ca|,
 |Vaishnavi Ratnasabapathy|vratnasa@uwaterloo.ca|
+
+
 MIT License
 
 Copyright (c) 2021, Brandon Gartner, Chris Abey, Avril Chen, Vaishnavi Ratnasabapathy, Kushal Mujral
