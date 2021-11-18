@@ -1,14 +1,14 @@
 import requests;
 import json;
 
-def translate(text):
+def translate(text, inputlang, outputlang):
     url = 'https://api-free.deepl.com/v2/translate'
 
     #source lang: language we are currently writing in
-    source_lang = 'EN';
+    source_lang = inputlang;
 
     #target lang: language we would like to get the result back in
-    target_lang = 'FR';
+    target_lang = outputlang;
 
     #split sentences: whether or not to split sentences that are sent.
     #i'll be turning this on since speech recognition often has trouble with splitting sentences
@@ -41,4 +41,5 @@ def translate(text):
     return translated_text;
 
 #translate("yes");
-#translate('hello my name is julian');
+translate('hello my name is julian.  So, remember, this is the basic pattern of an English sentence', 'EN', 'FR');
+translate('c\'est un phrase qui j\'ai ecrit vitement. ici je va simplement ecrire plus de mots en francais', 'FR', 'EN');

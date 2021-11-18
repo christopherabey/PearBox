@@ -4,7 +4,11 @@
 
 SE101 final project.
 
+---
+
 (motivation)
+
+---
 
 Setup:
 
@@ -18,7 +22,15 @@ Install Python 3
 
 > `pip3 install pyaudio`
 
+> `pip3 install pillow`
+
+> `pip3 install pytesseract`
+
+---
+
 (how to use)
+
+---
 
 Credit:
 
@@ -27,6 +39,8 @@ Credit:
 |Brandon Gartner|bjgartner@uwaterloo.ca|,
 
 (add your names in the order you notice this)
+
+---
 
 MIT License
 
