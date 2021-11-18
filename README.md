@@ -4,7 +4,11 @@
 
 SE101 final project.
 
+---
+
 (motivation)
+
+---
 
 Setup:
 
@@ -29,6 +33,8 @@ Install Python 3
 > `pip3 install python3-gpiozero`
 
 (how to use)
+
+---
 
 Credit:
 
