@@ -13,4 +13,19 @@ def speechRecognition():
         # convert speech to text
         text = r.recognize_google(audio_data)
         print(text)
-        
+        return text
+
+def speechRecognitionToFile():
+
+    #listens to the microphone, saves the input from the mic into our text file
+    try:
+        text = speechRecognition()
+        with open('text.txt', 'w') as file:
+
+            file.write(text)
+    #if there is a problem finding the file we're outputting to, tells the user that.
+    except FileNotFoundError:
+        print('There was an error with locating the output file.  Please try again later.')
+
+#to be tested when mic is set up
+#speechRecognitionToFile()
