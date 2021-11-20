@@ -3,6 +3,16 @@ import pytesseract
 # import argparse
 import cv2
 import os
+import time
+import picamera
+import numpy as np
+
+with picamera.PiCamera() as camera:
+    camera.resolution = (320, 240)
+    camera.framerate = 24
+    time.sleep(2)
+    output = np.empty((240, 320, 3), dtype=np.uint8)
+    camera.capture(output, 'rgb')
 
 def ocr(path):
     image = cv2.imread(path)
@@ -19,7 +29,7 @@ def ocr(path):
 
 def ocr_file(path):
     text = ocr(path)
-    
+
     #writes the result of calling ocr with that path, into the file
     try:
         with open('text.txt', 'w') as file:
