@@ -1,7 +1,7 @@
 # PearBox
 
 Description:
-(Our idea is to make a toolbox that has various devices to aid people that are visually or audibly impaired. Our first device is a camera that recognizes text and says it aloud. We plan to house a Raspberry Pi Camera Module in a wooden pen-shaped tube. It’ll be connected to the box. The second device would be a microphone that converts sound into text on a document. It would be housed in a similar way to the camera. Some additional features would be an internet-connected language converter, sending converted text to a document to be accessed later, and scanning only specific words. )
+(Our idea is to make a toolbox that has various devices to aid people that are visually or audibly impaired. Our first device is a camera that recognizes text and says it aloud. We plan to house a Raspberry Pi Camera Module on a wooden stick tube. It’ll be connected to the box. The second device would be a microphone that converts sound into text on a document. It would be housed in a similar way to the camera. Some additional features would be an internet-connected language converter, sending converted text to a document to be accessed later, and scanning only specific words. )
 
 SE101 final project.
 Inspiration: 
@@ -19,9 +19,8 @@ Challenges we ran into:
 (Downloading all of the required API libraries was a challenge because we had to research which one was appropriate for our intended uses. Also, we had trouble setting up the hardware )
 
 
-Accomplishments that we're proud of:
-
 What we learned:
+    Majority of us never worked on a hardware-based project before, so we had to research and learn. This includes learning about the Raspberry Pi and the breadboard with the GPIO location numbers. Also, the members that did the woodworking did not have enough sufficient experience in that area. They had to learn quickly and how to solve problems on the go.
 
 
 

@@ -1,32 +1,4 @@
-#import RPi.GPIO as GPIO
-#GPIO.setmode(GPIO.BOARD)
-#
-#buttonPinST=1
-#buttonPinTS=2
-#buttonPinT=3
-#
-#GPIO.setup(buttonPinST, buttonPinTS, buttonPinT, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-#
-#while True:
-#    buttonState1= GPIO.input(buttonPinST)
-#    buttonState2= GPIO.input(buttonPinTS)
-#    buttonState3= GPIO.input(buttonPinT)
-#    if buttonState1 ==True:
-#        speech_to_text.speechRecognition()
-#    if buttonState2 ==True:
-#        text_to_speech.textSpeech()
-#    if buttonState3 ==True:
-#        deepl_interfacing.translate()
-#    else:
-#        GPIO.output(GPIO.HIGH)
-
-        
-#calling other functions from other files to connect everything 
-
-#calling speech to text function 
-#happens when microphone button is pushed
-
-
+#imports from functions and files that will be called
 from gpiozero import Button
 import pyttsx3 as tts
 import requests
@@ -38,30 +10,34 @@ import os
 import speech_recognition as sr
 from os import path
 
+#importing the functions from the files
 from speech_to_text import speechRecognition
 from text_to_speech import speak
 from deepl_interfacing import translate
 from ocr import OCR
 
 
-
-buttonTts = Button(4)
-buttonStt = Button(18)
+#setting up the GPIO locations for the buttons on the breadboard
+buttonTTS = Button(4)
+buttonSTT = Button(18)
 buttonTranslate = Button(24)
 buttonOCR = Button(20)
 
-if (buttonTts.is_pressed):
-    #speech_to_text.speechRecognition()
-    speechRecognition()
-elif (buttonStt.is_pressed):
-    #text_to_speech.textSpeech('This is a test for pearbox audio')
-    speak('This is a test for pearbox audio')
-elif (buttonTranslate.is_pressed):
-    #deepl_interfacing.translate()
-    translate('Hello World', "EN", "FR")
-elif (buttonOCR.is_pressed):
-    #ocr.OCR()
-    OCR()
+#once button is pressed, action is called
+while True:
+
+    if (buttonTTS.is_pressed):
+        #text_to_speech.textSpeech('This is a test for pearbox audio')
+        speak('This is a test for pearbox audio')
+    elif (buttonSTT.is_pressed):
+        #speech_to_text.speechRecognition()
+        speechRecognition()
+    elif (buttonTranslate.is_pressed):
+        #deepl_interfacing.translate()
+        translate('Hello World')
+    elif (buttonOCR.is_pressed):
+        #ocr.OCR()
+        OCR()
 
 
 
