@@ -6,16 +6,20 @@ import json
 from PIL import Image
 import pytesseract
 import argparse
+import cv2
 import os
 import speech_recognition as sr
 from os import path
+from picamera import PiCamera
+from time import sleep
 
 #importing the functions from the files
 from speech_to_text import speechRecognition
 from text_to_speech import speak
 from deepl_interfacing import translate
-from ocr import OCR
+from ocr import ocr_file
 
+camera = PiCamera()
 
 #setting up the GPIO locations for the buttons on the breadboard
 buttonTTS = Button(4)
@@ -35,9 +39,10 @@ while True:
     elif (buttonTranslate.is_pressed):
         #deepl_interfacing.translate()
         translate('Hello World')
+
     elif (buttonOCR.is_pressed):
-        #ocr.OCR()
-        OCR()
+        print("3")
+        ocr_file("../images/avril.jpg")
 
 
 
@@ -51,10 +56,6 @@ while True:
 
 
 
+    
  
-
-
-
-
-
 
