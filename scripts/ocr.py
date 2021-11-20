@@ -6,6 +6,7 @@ import os
 
 
 #python3 ocr.py --image ../images/apple.png
+
 def ocr(path):
     print(os.getcwd())
     # argument parse and parse the arguments
@@ -24,23 +25,29 @@ def ocr(path):
         #gray = cv2.medianBlur(gray, 3)
 
     # write the grayscale image to disk as a temporary file so we can apply OCR to it
-    filename = "{}.png".format(os.getpid())
+    filename = "{}.jpg".format(os.getpid())
     cv2.imwrite(filename, gray)
 
     #load the image as PIL/Pillow image, apply OCR, and then delete the temporary file
     text = pytesseract.image_to_string(Image.open(filename))
     os.remove(filename)
-    print(text)
+    # print(text)
 
     #show the output images
     cv2.imshow("Image", image)
     cv2.imshow("Output", gray)
-    cv2.waitKey(0)
+    # print('does waitKey pause forever 1')
+    # cv2.waitKey(0)
+    # print('does waitKey pause forever 2')
     return text
 
 
 def ocr_file(path):
     text = ocr(path)
+
+    # print('this')
+
+    # print(text)
 
     #writes the result of calling ocr with that path, into the file
     try:
@@ -52,4 +59,4 @@ def ocr_file(path):
 
 
 #test this on a computer with all of the prerequisites
-ocr_file("images/apple.png")
+ocr_file("images/avril.jpg")
