@@ -34,51 +34,51 @@ import json
 from PIL import Image
 import pytesseract
 import argparse
+import cv2
 import os
 import speech_recognition as sr
 from os import path
+from picamera import PiCamera
+from time import sleep
 
 from speech_to_text import speechRecognition
 from text_to_speech import speak
 from deepl_interfacing import translate
-from ocr import OCR
+from ocr import ocr_file
+
+camera = PiCamera()
 
 
 
-buttonTts = Button(4)
-buttonStt = Button(18)
+buttonTTS = Button(4)
+buttonSTT = Button(5)
 buttonTranslate = Button(24)
 buttonOCR = Button(20)
 
-if (buttonTts.is_pressed):
-    #speech_to_text.speechRecognition()
-    speechRecognition()
-elif (buttonStt.is_pressed):
-    #text_to_speech.textSpeech('This is a test for pearbox audio')
-    speak('This is a test for pearbox audio')
-elif (buttonTranslate.is_pressed):
-    #deepl_interfacing.translate()
-    translate('Hello World', "EN", "FR")
-elif (buttonOCR.is_pressed):
-    #ocr.OCR()
-    OCR()
+while True:
 
-
-
-
-
-
-
-
-
-
-
-
-
+    if (buttonTTS.is_pressed):
+        print("1")
+        speak('This is a test for pearbox audio')
+        
+        
+    elif (buttonTranslate.is_pressed):
+        print("2")
+        translate("This is a test for pearbox translate")
+        
+        
+    elif (buttonOCR.is_pressed):
+        print("3")
+        camera.start_preview()
+        sleep(5)
+        camera.capture('/home/pi/Desktop/pearbox/images/avril.jpg')
+        camera.stop_preview()
+        print("3")
+        ocr_file("../images/avril.jpg")
+        
+        
+    elif (buttonSTT.is_pressed):
+        print("4")
+        speechRecognition()    
  
-
-
-
-
-
 
