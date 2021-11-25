@@ -3,7 +3,6 @@ import pytesseract
 # import argparse
 import cv2
 import os
-<<<<<<< Updated upstream
 import time
 import picamera
 import numpy as np
@@ -15,8 +14,6 @@ with picamera.PiCamera() as camera:
     output = np.empty((240, 320, 3), dtype=np.uint8)
     camera.capture(output, 'rgb')
 
-=======
->>>>>>> Stashed changes
 def OCR():
 
     # argument parse and parse the arguments
@@ -51,10 +48,6 @@ def OCR():
     cv2.imshow("Output", gray)
     cv2.waitKey(0)
 
-<<<<<<< Updated upstream
-=======
-#python3 ocr.py --image ../images/apple.png
->>>>>>> Stashed changes
 def ocr(path):
     image = cv2.imread(path)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
