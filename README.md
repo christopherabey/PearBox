@@ -68,7 +68,17 @@ Majority of us never worked on a *hardware-based* project before, so we had to r
 ### How to Use
 
 ---
-WRITE STUFFF
+To turn on the PearBox, plug the charger into the Raspberry Pi. At this point, the Raspberry Pi should be booted up
+and you can press the buttons to use the features:
+
+1) This button is for the text to speech function 
+
+2)
+
+3)
+
+4)
+
 ---
 
 Credit:
