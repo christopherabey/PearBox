@@ -58,6 +58,6 @@ def translate_file(sourceLang, targetLang):
         print('There was an error with locating the output file.  Please try again later.')
 
 
-translate_file('EN', 'FR')
+#translate_file('EN', 'FR')
 
 # translate_file('FR', 'EN')
