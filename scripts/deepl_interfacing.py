@@ -1,14 +1,14 @@
 import requests;
 import json;
 
-def translate(text):
+def translate(text, sourceLang, targetLang):
     url = 'https://api-free.deepl.com/v2/translate'
 
     #source lang: language we are currently writing in
-    source_lang = 'EN';
+    source_lang = sourceLang;
 
     #target lang: language we would like to get the result back in
-    target_lang = 'FR';
+    target_lang = targetLang;
 
     #split sentences: whether or not to split sentences that are sent.
     #i'll be turning this on since speech recognition often has trouble with splitting sentences
@@ -16,7 +16,7 @@ def translate(text):
 
     #preserve formatting: should the translation be mandatorily have the same formatting as the sent text
     #formatting should be fine? TODO: make sure that STT doesn't cause any issues with the formatting for this.
-    preserve_formatting = '0';
+    preserve_formatting = '0';s
 
     post_object = {
         'text': text,
