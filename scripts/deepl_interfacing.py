@@ -16,7 +16,7 @@ def translate(text, sourceLang, targetLang):
 
     #preserve formatting: should the translation be mandatorily have the same formatting as the sent text
     #formatting should be fine? TODO: make sure that STT doesn't cause any issues with the formatting for this.
-    preserve_formatting = '0';s
+    preserve_formatting = '0';
 
     post_object = {
         'text': text,
