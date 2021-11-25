@@ -14,16 +14,16 @@ from picamera import PiCamera
 from time import sleep
 
 #importing the functions from the files
-from speech_to_text import speechRecognition
-from text_to_speech import speak
-from deepl_interfacing import translate
+from speech_to_text import speechRecognitionToFile
+from text_to_speech import tts_from_file
+from deepl_interfacing import translate_from_file
 from ocr import ocr_file
 
 camera = PiCamera()
 
 #setting up the GPIO locations for the buttons on the breadboard
 buttonTTS = Button(4)
-buttonSTT = Button(18)
+buttonSTT = Button(5)
 buttonTranslate = Button(24)
 buttonOCR = Button(20)
 
@@ -32,13 +32,13 @@ while True:
 
     if (buttonTTS.is_pressed):
         #text_to_speech.textSpeech('This is a test for pearbox audio')
-        speak('This is a test for pearbox audio')
+        tts_from_file()
     elif (buttonSTT.is_pressed):
         #speech_to_text.speechRecognition()
-        speechRecognition()
+        speechRecognitionToFile()
     elif (buttonTranslate.is_pressed):
         #deepl_interfacing.translate()
-        translate('Hello World')
+        translate_from_file("EN", "FR")
 
     elif (buttonOCR.is_pressed):
         print("3")
