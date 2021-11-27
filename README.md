@@ -5,7 +5,7 @@
 ---
 
 
-Our idea is to make a toolbox that has various devices to aid people that are visually or audibly impaired. Our first device is a camera that recognizes text and says it aloud. We plan to house a *Raspberry Pi Camera Module* on a wooden stick tube. It’ll be connected to the box. The second device would be a microphone that converts sound into text on a document. It would be housed in a similar way to the camera. Some additional features would be an internet-connected language converter, sending converted text to a document to be accessed later, and scanning only specific words.
+Our idea is to make a toolbox that has various devices to aid people that are visually or audibly impaired. Our first device is a camera that recognizes text and says it aloud. We house a *Raspberry Pi Camera Module* on a wooden stick tube that is connected to the box. The second device is a microphone that converts sound into text on a document. It is housed in a similar way to the camera. Some additional features are an internet-connected language converter and sending converted text to a document to be accessed later.
 
 
 ### Inspiration:
@@ -19,16 +19,16 @@ We were initially motivated to ease reading for the visually impaired. We wanted
 ---
 
 ##### Hardware:
-    The box that holds the tools will include most of the hardware components (**battery, speaker, Raspberry Pi, screen**) for portability. The speaker, Raspberry Pi and battery will be in the box, while the screen would be place on the outside of the box. A breadboard is placed on the other side of the box to connect the buttons to the Raspberry Pi. 
+    The box that holds the tools will include most of the hardware components (**battery, speaker, Raspberry Pi, screen**) for portability. The speaker, Raspberry Pi and battery will be in the box, while the screen is placed on the outside of the box. A breadboard is placed on the other side of the box to connect the buttons to the Raspberry Pi. 
 
 ###### Software:
-    Listed under "Setup" was the API libraries that we implemented in the project. We created a function what connect all of the files together and that recongizes when a button is pished, so an action will follow, such as Speech-to-Text.
+    Listed under "Setup" are the API libraries that we implemented in the project. We created a function that connect all of the files together and that recognizes when a button is pushed, so an action will follow, such as Speech-to-Text.
 
 ### Challenges we ran into:
 
 ---
 
-Downloading all of the required *API libraries* was a challenge because we had to research which one was appropriate for our intended uses. Also, we had trouble setting up the hardware. 
+Downloading all of the required *API libraries* was a challenge because we had to research which ones were appropriate for our intended uses. Also, we had trouble setting up the hardware. 
 
 
 ### What we learned:
@@ -68,16 +68,15 @@ Majority of us never worked on a *hardware-based* project before, so we had to r
 ### How to Use
 
 ---
-To turn on the PearBox, plug the charger into the Raspberry Pi. At this point, the Raspberry Pi should be booted up
-and you can press the buttons to use the features:
+To turn on the PearBox, plug the charger into the Raspberry Pi. At this point, you have to plug in a keyboard and turn on the file and you can press the buttons to use the features:
 
-1) This button is for the text to speech function 
+1) This button is for the text to speech function aka our "OCR" function.
 
-2)
+2) This button is for the translation.
 
-3)
+3) This button is for Speech-to-Text. 
 
-4)
+4) This button is for Text-to-Speech.
 
 ---
 
