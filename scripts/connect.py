@@ -16,7 +16,7 @@ from time import sleep
 #importing the functions from the files
 from speech_to_text import speechRecognitionToFile
 from text_to_speech import tts_from_file
-from deepl_interfacing import translate_from_file
+from deepl_interfacing import translate_file
 from ocr import ocr_file
 
 camera = PiCamera()
@@ -38,7 +38,7 @@ while True:
         speechRecognitionToFile()
     elif (buttonTranslate.is_pressed):
         #deepl_interfacing.translate()
-        translate_from_file("EN", "FR")
+        translate_file("EN", "FR")
 
     elif (buttonOCR.is_pressed):
         print("3")
