@@ -1,9 +1,14 @@
 # PearBox
 
-### Description
+### Youtube Link
 
 ---
 
+[![Alt text](https://img.youtube.com/vi/nLhw5SoD5nI/0.jpg)](https://www.youtube.com/watch?v=nLhw5SoD5nI)
+
+### Description
+
+---
 
 Our idea is to make a toolbox that has various devices to aid people that are visually or audibly impaired. Our first device is a camera that recognizes text and says it aloud. We house a *Raspberry Pi Camera Module* on a wooden stick tube that is connected to the box. The second device is a microphone that converts sound into text on a document. It is housed in a similar way to the camera. Some additional features are an internet-connected language converter and sending converted text to a document to be accessed later.
 
